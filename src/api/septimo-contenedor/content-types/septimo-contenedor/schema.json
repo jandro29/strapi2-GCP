@@ -1,0 +1,107 @@
+{
+  "kind": "singleType",
+  "collectionName": "septimo_contenedors",
+  "info": {
+    "singularName": "septimo-contenedor",
+    "pluralName": "septimo-contenedors",
+    "displayName": "7septimo-contenedor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FAQ": {
+      "type": "string",
+      "required": true
+    },
+    "PrimerTitulo": {
+      "type": "string",
+      "required": true
+    },
+    "contenido": {
+      "type": "string",
+      "required": true
+    },
+    "pregunta1": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "respuesta1": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "pregunta2": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "respuesta2": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "pregunta3": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "respuesta3": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "pregunta4": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "respuesta4": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "pregunta5": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "respuesta5": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "pregunta6": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "respuesta6": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "pregunta7": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "respuesta7": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "pregunta8": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "respuesta8": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    }
+  }
+}

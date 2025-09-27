@@ -1,0 +1,64 @@
+{
+  "kind": "singleType",
+  "collectionName": "sexto_contenedors",
+  "info": {
+    "singularName": "sexto-contenedor",
+    "pluralName": "sexto-contenedors",
+    "displayName": "6sexto-contenedor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo1": {
+      "type": "string",
+      "required": true
+    },
+    "PrimerTitulo": {
+      "type": "string",
+      "required": true
+    },
+    "contenido": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "primerTextoAzul": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "textoBlanco": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "segundoTextoAzul": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "textoInformativo": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "numeroIntegraciones": {
+      "type": "string",
+      "required": true
+    },
+    "integraciones": {
+      "type": "string",
+      "required": true
+    },
+    "numeroTiempoActivo": {
+      "type": "string",
+      "required": true
+    },
+    "tiempoactivo": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

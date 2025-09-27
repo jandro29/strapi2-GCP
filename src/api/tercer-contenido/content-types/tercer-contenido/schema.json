@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "tercer_contenidos",
+  "info": {
+    "singularName": "tercer-contenido",
+    "pluralName": "tercer-contenidos",
+    "displayName": "3tercer-contenido"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PrimerTitulo": {
+      "type": "string",
+      "required": true
+    },
+    "contenido": {
+      "type": "string",
+      "required": true
+    },
+    "subtitulo1": {
+      "type": "string",
+      "required": true
+    },
+    "contenido1": {
+      "type": "string",
+      "required": true
+    },
+    "subtitulo2": {
+      "type": "string",
+      "required": true
+    },
+    "contenido2": {
+      "type": "string",
+      "required": true
+    },
+    "subtitulo3": {
+      "type": "string",
+      "required": true
+    },
+    "contenido3": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

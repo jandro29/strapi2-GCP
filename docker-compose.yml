@@ -1,0 +1,67 @@
+#version: "3"
+services:
+  strapi:
+    container_name: strapi-inteligenze2 #cambiado
+    build: . #usamos el dockerfile con esta linea
+    #image: strapi/strapi:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_CLIENT: postgres #cambiado
+      DATABASE_HOST: strapiDB #cambiado
+      DATABASE_PORT: 5432 #cambiado
+      DATABASE_NAME: strapi_db #cambiado
+      DATABASE_USERNAME: strapi #cambiado
+      DATABASE_PASSWORD: 1234 #cambiado
+      JWT_SECRET: p64siJavQBfIgV6yD95oyA== #cambiado
+      ADMIN_JWT_SECRET: a2lyGB0wlfYuuWBFrGhTUQ== #cambiado
+      APP_KEYS: tf6Yz/XzfT6gEKS1ZNVPjQ==,/QoUJKWnSH3t+ezHmondMw==,F135sd8YtPQa5uVZWpaP2Q==,mocslUkBVxziHrF8ntT/ag== #cambiado
+      NODE_ENV: production #cambiado
+    volumes:
+      - ./config:/opt/app/config
+      - ./src:/opt/app/src
+      - ./package.json:/opt/package.json
+      - ./yarn.lock:/opt/yarn.lock
+      - ./.env:/opt/app/.env
+      - ./public/uploads:/opt/app/public/uploads
+    
+    #linea creada
+    user: "node"
+    ports:
+      - "1337:1337"
+    networks:
+      - strapi #cambiado
+    depends_on:
+      - strapiDB
+    
+    command: sh -c "sleep 10 && npm run develop"
+
+    
+
+  strapiDB:
+    container_name: strapiDB
+    platform: linux/amd64 #for platform error on Apple M1 chips
+    restart: unless-stopped
+    env_file: .env
+    image: postgres:16.0-alpine
+    environment:    
+      POSTGRES_USER: strapi #cambiado
+      POSTGRES_PASSWORD: 1234 #cambiado
+      POSTGRES_DB: strapi_db #cambiado
+    volumes:
+      - strapi-data:/var/lib/postgresql/data/ #using a volume
+      #- ./data:/var/lib/postgresql/data/ # if you want to use a bind folder
+
+    ports:
+      - "5432:5432"
+    networks:
+      - strapi #cambiado
+
+volumes:
+  strapi-data:
+
+networks:
+  strapi:
+    name: strapi #cambiado
+    driver: bridge
+

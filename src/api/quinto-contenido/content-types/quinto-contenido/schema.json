@@ -1,0 +1,67 @@
+{
+  "kind": "singleType",
+  "collectionName": "quinto_contenidos",
+  "info": {
+    "singularName": "quinto-contenido",
+    "pluralName": "quinto-contenidos",
+    "displayName": "5quinto-contenido"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo1": {
+      "type": "string",
+      "required": true
+    },
+    "PrimerTitulo": {
+      "type": "string",
+      "required": true
+    },
+    "contenido": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "testimonio1": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "personatestimonio1": {
+      "type": "string",
+      "required": true
+    },
+    "roltestimonio1": {
+      "type": "string",
+      "required": true
+    },
+    "testimonio2": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "personatestimonio2": {
+      "type": "string",
+      "required": true
+    },
+    "roltestimonio2": {
+      "type": "string",
+      "required": true
+    },
+    "testimonio3": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "personatestimonio3": {
+      "type": "string",
+      "required": true
+    },
+    "roltestimonio3": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

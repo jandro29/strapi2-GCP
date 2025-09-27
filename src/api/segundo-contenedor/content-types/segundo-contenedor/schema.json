@@ -1,0 +1,180 @@
+{
+  "kind": "singleType",
+  "collectionName": "segundo_contenedors",
+  "info": {
+    "singularName": "segundo-contenedor",
+    "pluralName": "segundo-contenedors",
+    "displayName": "2segundo-contenedor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo1": {
+      "type": "string",
+      "required": true
+    },
+    "PrimerTitulo": {
+      "type": "string",
+      "required": true
+    },
+    "contenido": {
+      "type": "string",
+      "required": true
+    },
+    "image1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulocuadro1": {
+      "type": "string",
+      "required": true
+    },
+    "contenidocuadro1": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "image2": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulocuadro2": {
+      "type": "string",
+      "required": true
+    },
+    "contenidocuadro2": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "image3": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulocuadro3": {
+      "type": "string",
+      "required": true
+    },
+    "contenidocuadro3": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "image4": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulocuadro4": {
+      "type": "string",
+      "required": true
+    },
+    "contenidocuadro4": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "image5": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulocuadro5": {
+      "type": "string",
+      "required": true
+    },
+    "contenidocuadro5": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "image6": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulocuadro6": {
+      "type": "string",
+      "required": true
+    },
+    "contenidocuadro6": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "image7": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulocuadro7": {
+      "type": "string",
+      "required": true
+    },
+    "contenidocuadro7": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    },
+    "image8": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulocuadro8": {
+      "type": "string",
+      "required": true
+    },
+    "contenidocuadro8": {
+      "type": "string",
+      "maxLength": 10000000000000000,
+      "required": true
+    }
+  }
+}
