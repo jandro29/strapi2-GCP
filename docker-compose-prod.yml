@@ -1,0 +1,57 @@
+#version: "3"
+services:
+  strapi:
+    container_name: strapi-inteligenze2
+    image: us-central1-docker.pkg.dev/suite-inteligenze/strapi-prod2/strapi:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: strapiDB
+      DATABASE_PORT: 5432
+      DATABASE_NAME: strapi_db
+      DATABASE_USERNAME: strapi
+      DATABASE_PASSWORD: 1234
+      JWT_SECRET: p64siJavQBfIgV6yD95oyA==
+      ADMIN_JWT_SECRET: a2lyGB0wlfYuuWBFrGhTUQ==
+      APP_KEYS: tf6Yz/XzfT6gEKS1ZNVPjQ==,/QoUJKWnSH3t+ezHmondMw==,F135sd8YtPQa5uVZWpaP2Q==,mocslUkBVxziHrF8ntT/ag==
+      NODE_ENV: production
+    volumes:
+      - ./config:/opt/app/config
+      - ./src:/opt/app/src
+      - ./package.json:/opt/package.json
+      - ./yarn.lock:/opt/yarn.lock
+      - ./.env:/opt/app/.env
+      - ./public/uploads:/opt/app/public/uploads
+    user: "node"
+    ports:
+      - "1337:1337"
+    networks:
+      - strapi
+    depends_on:
+      - strapiDB
+    command: sh -c "sleep 10 && npm run start"
+
+  strapiDB:
+    container_name: strapiDB
+    platform: linux/amd64
+    restart: unless-stopped
+    image: postgres:16.0-alpine
+    environment:
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: strapi_db
+    volumes:
+      - strapi-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - strapi
+
+volumes:
+  strapi-data:
+
+networks:
+  strapi:
+    name: strapi
+    driver: bridge
